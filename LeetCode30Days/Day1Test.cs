@@ -19,19 +19,29 @@ namespace LeetCode30Days
         //    var result = Day1.SingleNumber(array);
         //    //Assert
         //    Assert.Equal(4, result);
-            
+
         //}
         //--------------------------------------------------------//
+        //[Theory]
+        //[InlineData(19)]
+        //void day2method(int b)
+        //{
+        //    //Act
+        //    var result = Day2.IsHappy(b);
+        //    //Assert
+        //    Assert.True(result);
+
+        //}
         [Theory]
-        [InlineData(19)]
-        void day2method(int b)
+        [InlineData(new[]{0,1,0,3,12})]
+        void day3method(int[] nums)
         {
             //Act
-            var result = Day2.IsHappy(b);
+            var result = Day3.MoveZeroes(nums);
             //Assert
-            Assert.True(result);
-           
+            Assert.Equal(new[] { 1, 3, 12, 0, 0 }, result);
         }
+       
 
     }
 }
