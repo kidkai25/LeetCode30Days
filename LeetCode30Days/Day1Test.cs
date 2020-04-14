@@ -32,16 +32,22 @@ namespace LeetCode30Days
         //    Assert.True(result);
 
         //}
-        [Theory]
-        [InlineData(new[]{0,1,0,3,12})]
-        void day3method(int[] nums)
-        {
-            //Act
-            var result = Day3.MoveZeroes(nums);
-            //Assert
-            Assert.Equal(new[] { 1, 3, 12, 0, 0 }, result);
-        }
-       
+        //[Theory]
+        //[InlineData(new[]{0,1,0,3,12})]
+        //void day3method(int[] nums)
+        //{
+        //    //Act
+        //    var result = Day3.MoveZeroes(nums);
+        //    //Assert
+        //    Assert.Equal(new[] { 1, 3, 12, 0, 0 }, result);
+        //}
 
+        [Theory]
+        [InlineData ("eat", "tea", "tan", "ate", "nat", "bat")]
+        void day6method(params string[] strs)
+        {
+            var x = Day6.GroupAnagrams(strs);
+        }
+      
     }
 }
